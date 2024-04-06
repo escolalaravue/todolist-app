@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="./tailwind.css">
+</head>
+<body class="bg-gray-800">
+	<div class="w-screen h-screen flex items-center justify-center">
+        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 mx-auto">
+
+        	<!-- Auth container -->
+            <div style="height: 300px;">
+
+            	<!-- Auth menu -->
+		        <div class="flex items-center justify-center mb-8">
+			        <a href="" class="px-2 py-2 border-b-2 mx-4 border-blue-500 text-gray-500">
+			            Login
+			        </a>
+
+			        <a href="" class="px-2 py-2 border-b-2 mx-4 border-gray-800 text-gray-600">
+			            Registrar
+			        </a>
+			    </div>
+			    <!--/ Auth menu -->
+
+			    <!-- Alert example -->
+		        <div class="rounded-sm bg-red-100 p-4 mb-4">
+		            <h3 class="text-sm leading-5 font-medium text-red-800">
+		                Alert message
+		            </h3>
+		        </div>
+		        <!--/ Alert example -->
+
+		        <!-- Login form -->
+		        <div class="grid gap-2">
+		            <input
+		                type="text"
+		                placeholder="Digite seu e-mail"
+		                class="bg-gray-900 placeholder-gray-700 text-gray-500 font-light border border-gray-900 focus:outline-none focus:border-blue-800 rounded-sm py-3 px-4 block w-full appearance-none leading-normal"
+		            >
+
+		            <div class="text-red-500 text-sm mb-2">
+		                Erro message
+		            </div>
+
+		            <input
+		                type="password"
+		                placeholder="Digite sua senha"
+		                class="bg-gray-900 placeholder-gray-700 text-gray-500 font-light border border-gray-900 focus:outline-none focus:border-blue-800 rounded-sm py-3 px-4 block w-full appearance-none leading-normal"
+		            >
+
+		            <button
+		                type="submit"
+		                class="flex items-center justify-center bg-blue-800 text-blue-200 font-medium text-sm focus:outline-none rounded-sm py-3 px-4 block w-full appearance-none leading-normal"
+		            >
+		                <img
+		                    v-if="spinner.login"
+		                    src="./src/img/spinner.svg"
+		                    alt=""
+		                    class="w-5 h-5 mr-2"
+		                >
+
+		                ENTRAR
+		            </button>
+
+		            <div class="my-4 text-center">
+		                <a href="" class="text-sm font-light">
+		                    Esqueci minha senha
+		                </a>
+		            </div>
+		        </div>
+		        <!--/ Login form -->
+		        
+		    </div>
+		    <!--/ Auth container -->
+
+        </div>
+    </div>
+</body>
+</html>
